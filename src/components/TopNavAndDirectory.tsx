@@ -1,8 +1,27 @@
 import React, { useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
 import { MOXFORGE_PAGES, PageId } from '../data/moxforgeData';
 import { Theme } from '../utils/theme';
-import moxforgeLogo from '../assets/bluemetallic_logo_new_1__20729a63.png';
+import moxforgeLogo from '../assets/bluemetallic_logo_new_1__20729a63.webp';
+
+const Sun: React.FC<{ className?: string }> = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="4" />
+    <path d="M12 2v2" />
+    <path d="M12 20v2" />
+    <path d="m4.93 4.93 1.41 1.41" />
+    <path d="m17.66 17.66 1.41 1.41" />
+    <path d="M2 12h2" />
+    <path d="M20 12h2" />
+    <path d="m6.34 17.66-1.41 1.41" />
+    <path d="m19.07 4.93-1.41 1.41" />
+  </svg>
+);
+
+const Moon: React.FC<{ className?: string }> = ({ className }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+  </svg>
+);
 
 interface TopNavAndDirectoryProps {
   activePage: PageId;
@@ -47,6 +66,8 @@ export const TopNavAndDirectory: React.FC<TopNavAndDirectoryProps> = ({
           <img
             src={moxforgeLogo}
             alt="Moxforge Logo"
+            width={36}
+            height={36}
             className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg object-cover ring-1 ring-stone-900/10 dark:ring-slate-700 shadow-xs group-hover:scale-105 transition-transform"
             loading="eager"
             decoding="async"

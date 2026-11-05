@@ -9,14 +9,14 @@ import {
 } from '../data/moxforgeData';
 import { filterPartners } from '../utils/moxforgeLogic';
 import { HeroArchitectureVisual } from './ArchitecturalVisuals';
-import innovationPillarImg from '../assets/image_52c5aa7b.png';
-import entrepreneurshipPillarImg from '../assets/image_b255f471.png';
-import technologyPillarImg from '../assets/image_100484d4.png';
-import ecosystemPillarImg from '../assets/image_586d4978.png';
-import learnitoAiLogo from '../assets/learnito-ai-logo.png';
-import pylumeLogo from '../assets/pylume-logo.png';
-import storvexLogo from '../assets/storvex-logo.png';
-import learnitosphereLogo from '../assets/learnitosphere-icon.png';
+import innovationPillarImg from '../assets/image_52c5aa7b.webp';
+import entrepreneurshipPillarImg from '../assets/image_b255f471.webp';
+import technologyPillarImg from '../assets/image_100484d4.webp';
+import ecosystemPillarImg from '../assets/image_586d4978.webp';
+import learnitoAiLogo from '../assets/learnito-ai-logo.webp';
+import pylumeLogo from '../assets/pylume-logo.webp';
+import storvexLogo from '../assets/storvex-logo.webp';
+import learnitosphereLogo from '../assets/learnitosphere-icon.webp';
 
 const PROJECT_LOGO_MAP: Record<string, string> = {
   'mox-learnito-ai': learnitoAiLogo,
@@ -147,10 +147,11 @@ export const HomeView: React.FC<{ onNavigate: (page: PageId) => void }> = ({
                 <img
                   src={pillar.image}
                   alt={pillar.imageAlt}
+                  width={640}
+                  height={400}
                   className="w-full h-40 object-cover block"
-                  loading="eager"
+                  loading="lazy"
                   decoding="async"
-                  fetchPriority="high"
                 />
               </div>
               <h3 className="font-display text-lg font-bold text-stone-950 mt-1.5">

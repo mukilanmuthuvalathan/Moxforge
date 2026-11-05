@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { Sun, Moon } from 'lucide-react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { PageId } from './data/moxforgeData';
 import { resolvePageId } from './utils/moxforgeLogic';
 import { Theme, getInitialTheme, applyTheme, toggleThemeValue } from './utils/theme';
@@ -13,16 +12,27 @@ import {
   ProjectsView,
   VenturesView,
 } from './components/PagesPrimary';
-import {
-  TeamView,
-  InnovationView,
-  CommunityView,
-  CareersView,
-  ContactView,
-} from './components/PagesSecondary';
-import { AdminCareersView } from './components/AdminCareersView';
 
-import moxforgeLogo from './assets/bluemetallic_logo_new_1__20729a63.png';
+const TeamView = lazy(() =>
+  import('./components/PagesSecondary').then((m) => ({ default: m.TeamView }))
+);
+const InnovationView = lazy(() =>
+  import('./components/PagesSecondary').then((m) => ({ default: m.InnovationView }))
+);
+const CommunityView = lazy(() =>
+  import('./components/PagesSecondary').then((m) => ({ default: m.CommunityView }))
+);
+const CareersView = lazy(() =>
+  import('./components/PagesSecondary').then((m) => ({ default: m.CareersView }))
+);
+const ContactView = lazy(() =>
+  import('./components/PagesSecondary').then((m) => ({ default: m.ContactView }))
+);
+const AdminCareersView = lazy(() =>
+  import('./components/AdminCareersView').then((m) => ({ default: m.AdminCareersView }))
+);
+
+import moxforgeLogo from './assets/bluemetallic_logo_new_1__20729a63.webp';
 
 function checkIsAdminRoute(): boolean {
   const hashClean = window.location.hash
@@ -128,20 +138,22 @@ export default function App() {
             >
               {theme === 'dark' ? (
                 <>
-                  <Sun className="w-4 h-4 text-amber-400" />
+                  <svg className="w-4 h-4 text-amber-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
                   <span>White Screen</span>
                 </>
               ) : (
                 <>
-                  <Moon className="w-4 h-4 text-stone-700" />
+                  <svg className="w-4 h-4 text-stone-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
                   <span>Dark Screen</span>
                 </>
               )}
             </button>
           </div>
-          <AdminCareersView
-            onOpenCareersPage={() => handleNavigate('careers')}
-          />
+          <Suspense fallback={null}>
+            <AdminCareersView
+              onOpenCareersPage={() => handleNavigate('careers')}
+            />
+          </Suspense>
         </main>
       </div>
     );
@@ -171,15 +183,17 @@ export default function App() {
         {activePage === 'ventures' && (
           <VenturesView onNavigate={handleNavigate} />
         )}
-        {activePage === 'team' && <TeamView onNavigate={handleNavigate} />}
-        {activePage === 'innovation' && (
-          <InnovationView onNavigate={handleNavigate} />
-        )}
-        {activePage === 'community' && (
-          <CommunityView onNavigate={handleNavigate} />
-        )}
-        {activePage === 'careers' && <CareersView />}
-        {activePage === 'contact' && <ContactView />}
+        <Suspense fallback={null}>
+          {activePage === 'team' && <TeamView onNavigate={handleNavigate} />}
+          {activePage === 'innovation' && (
+            <InnovationView onNavigate={handleNavigate} />
+          )}
+          {activePage === 'community' && (
+            <CommunityView onNavigate={handleNavigate} />
+          )}
+          {activePage === 'careers' && <CareersView />}
+          {activePage === 'contact' && <ContactView />}
+        </Suspense>
       </main>
 
       {/* Quiet Editorial Footer */}

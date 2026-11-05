@@ -21,22 +21,22 @@ import {
   dispatchEnquiryToPrivateGoogleSheet,
 } from '../utils/careerAdminStore';
 import { FounderArchitecturalPortrait } from './ArchitecturalVisuals';
-import aiAgentsBgImage from '../assets/image_3db6d480.png';
-import llmBgImage from '../assets/image_a9b49912.png';
-import perceptionBgImage from '../assets/image_abe221da.png';
-import navigationBgImage from '../assets/image_17d4176f.png';
-import rosBgImage from '../assets/image_91dadf27.png';
-import simulationBgImage from '../assets/image_0648d1a6.png';
-import safetyBgImage from '../assets/image_722a2bf1.png';
-import learningBgImage from '../assets/image_4b8e9814.png';
-import acceleratorBgImage from '../assets/image_28029c52.png';
-import roboticsHwBgImage from '../assets/image_cd537baa.png';
-import sensorsHwBgImage from '../assets/image_6eee7e26.png';
-import edgeComputingHwBgImage from '../assets/image_4584775c.png';
-import connectivityHwBgImage from '../assets/image_231fda61.png';
-import powerCoolingHwBgImage from '../assets/image_68febe15.png';
-import modularExpansionHwBgImage from '../assets/image_ceb3b1a8.png';
-import durabilityHwBgImage from '../assets/image_5312bfcd.png';
+import aiAgentsBgImage from '../assets/image_3db6d480.webp';
+import llmBgImage from '../assets/image_a9b49912.webp';
+import perceptionBgImage from '../assets/image_abe221da.webp';
+import navigationBgImage from '../assets/image_17d4176f.webp';
+import rosBgImage from '../assets/image_91dadf27.webp';
+import simulationBgImage from '../assets/image_0648d1a6.webp';
+import safetyBgImage from '../assets/image_722a2bf1.webp';
+import learningBgImage from '../assets/image_4b8e9814.webp';
+import acceleratorBgImage from '../assets/image_28029c52.webp';
+import roboticsHwBgImage from '../assets/image_cd537baa.webp';
+import sensorsHwBgImage from '../assets/image_6eee7e26.webp';
+import edgeComputingHwBgImage from '../assets/image_4584775c.webp';
+import connectivityHwBgImage from '../assets/image_231fda61.webp';
+import powerCoolingHwBgImage from '../assets/image_68febe15.webp';
+import modularExpansionHwBgImage from '../assets/image_ceb3b1a8.webp';
+import durabilityHwBgImage from '../assets/image_5312bfcd.webp';
 
 /* ==========================================================================
    06. OUR TEAM — Founder, Leadership and Team Members
