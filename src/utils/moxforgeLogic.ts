@@ -14,7 +14,11 @@ import {
 
 export function resolvePageId(raw?: string | null): PageId {
   if (!raw) return 'home';
-  const cleaned = raw.trim().toLowerCase().replace(/^#\/?/, '');
+  const cleaned = raw
+    .trim()
+    .toLowerCase()
+    .replace(/^#\/?/, '')
+    .replace(/^\/+|\/+$/g, '');
   const match = MOXFORGE_PAGES.find((p) => p.id === cleaned);
   return match ? match.id : 'home';
 }

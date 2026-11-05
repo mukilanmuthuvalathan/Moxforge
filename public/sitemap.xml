@@ -1,55 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home — Company introduction and vision -->
   <url>
     <loc>https://moxforge.vercel.app/</loc>
     <lastmod>2026-11-05</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- About Us — MOXFORGE story, mission and vision -->
   <url>
-    <loc>https://moxforge.vercel.app/#about</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moxforge.vercel.app/#ventures</loc>
+    <loc>https://moxforge.vercel.app/about</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Our Projects — All products, AI projects and innovations -->
   <url>
-    <loc>https://moxforge.vercel.app/#community</loc>
+    <loc>https://moxforge.vercel.app/projects</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Our Ventures — Moxforge Labs and Moxforge Community -->
   <url>
-    <loc>https://moxforge.vercel.app/#research</loc>
+    <loc>https://moxforge.vercel.app/ventures</loc>
     <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
+
+  <!-- Our Team — Founder, leadership and team members -->
   <url>
-    <loc>https://moxforge.vercel.app/#ecosystem</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moxforge.vercel.app/#team</loc>
-    <lastmod>2026-11-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moxforge.vercel.app/#careers</loc>
+    <loc>https://moxforge.vercel.app/team</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Innovation — Research, technology and new initiatives -->
   <url>
-    <loc>https://moxforge.vercel.app/#contact</loc>
+    <loc>https://moxforge.vercel.app/innovation</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Community — Chapters, events and student participation -->
+  <url>
+    <loc>https://moxforge.vercel.app/community</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Careers — Internships, volunteering and opportunities -->
+  <url>
+    <loc>https://moxforge.vercel.app/careers</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact — Business enquiries and partnerships -->
+  <url>
+    <loc>https://moxforge.vercel.app/contact</loc>
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

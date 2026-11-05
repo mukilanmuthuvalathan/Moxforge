@@ -36,18 +36,47 @@ function checkIsAdminRoute(): boolean {
   return hashClean === 'admin' || pathClean === 'admin';
 }
 
+function resolveLocationPage(): PageId {
+  if (window.location.hash && window.location.hash.length > 1) {
+    return resolvePageId(window.location.hash);
+  }
+  return resolvePageId(window.location.pathname);
+}
+
+const PAGE_TITLES: Record<PageId, string> = {
+  home: 'Moxforge — Official Website | Information, Technology & Internet',
+  about: 'About Us — Moxforge | Mission, Vision & Story',
+  projects: 'Our Projects — Moxforge | AI & Software Platforms',
+  ventures: 'Our Ventures — Moxforge | Innovation Labs & Community',
+  collaborators: 'Partners & Collaborators — Moxforge',
+  team: 'Our Team — Moxforge | Leadership & Engineering Roster',
+  innovation: 'Innovation & Research — Moxforge | AI & Robotics',
+  community: 'Community & Chapters — Moxforge | Open Developer Network',
+  careers: 'Careers — Moxforge | Internships & Opportunities',
+  contact: 'Contact Us — Moxforge | Business Enquiries & Partnerships',
+};
+
 export default function App() {
   const [isAdminRoute, setIsAdminRoute] = useState<boolean>(() =>
     checkIsAdminRoute()
   );
   const [activePage, setActivePage] = useState<PageId>(() =>
-    resolvePageId(window.location.hash)
+    resolveLocationPage()
   );
   const [theme, setTheme] = useState<Theme>(() => getInitialTheme());
 
   useEffect(() => {
     applyTheme(theme);
   }, [theme]);
+
+  useEffect(() => {
+    document.title = PAGE_TITLES[activePage] || PAGE_TITLES.home;
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      const pathSuffix = activePage === 'home' ? '' : activePage;
+      canonicalLink.setAttribute('href', `https://moxforge.vercel.app/${pathSuffix}`);
+    }
+  }, [activePage]);
 
   const handleToggleTheme = () => {
     setTheme((prev) => {
@@ -58,9 +87,9 @@ export default function App() {
   };
 
   useEffect(() => {
-    const onHashChange = () => {
+    const onLocationChange = () => {
       setIsAdminRoute(checkIsAdminRoute());
-      setActivePage(resolvePageId(window.location.hash));
+      setActivePage(resolveLocationPage());
     };
     const onKeyDown = (e: KeyboardEvent) => {
       if ((e.ctrlKey || e.altKey || e.metaKey) && e.shiftKey && e.key.toLowerCase() === 'a') {
@@ -69,10 +98,12 @@ export default function App() {
         setIsAdminRoute(true);
       }
     };
-    window.addEventListener('hashchange', onHashChange);
+    window.addEventListener('hashchange', onLocationChange);
+    window.addEventListener('popstate', onLocationChange);
     window.addEventListener('keydown', onKeyDown);
     return () => {
-      window.removeEventListener('hashchange', onHashChange);
+      window.removeEventListener('hashchange', onLocationChange);
+      window.removeEventListener('popstate', onLocationChange);
       window.removeEventListener('keydown', onKeyDown);
     };
   }, []);
