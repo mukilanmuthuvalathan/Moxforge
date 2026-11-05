@@ -1,0 +1,16 @@
+# Moxforge — Information, Technology & Internet
+
+> Moxforge is an Information, Technology, and Internet organization uniting applied software and artificial intelligence venture creation (Moxforge Innovation Labs) with an open global developer ecosystem (Moxforge Community).
+
+## Core Pages & Documentation
+
+- [Moxforge Home](https://moxforge.vercel.app/): Official overview of Moxforge and our four core pillars (Innovation, Entrepreneurship, Technology, Ecosystem).
+- [About Moxforge](https://moxforge.vercel.app/about): Organizational mission, vision, and founder architecture philosophy.
+- [Our Projects](https://moxforge.vercel.app/projects): Flagship AI and software platforms including Learnito AI, Learnitosphere, Pylume, and Storvex.
+- [Our Ventures](https://moxforge.vercel.app/ventures): Moxforge Innovation Labs and Moxforge Community overview.
+- [Innovation & Research](https://moxforge.vercel.app/innovation): Applied AI, software systems, and robotics hardware research tracks.
+- [Moxforge Community](https://moxforge.vercel.app/community): Collegiate developer chapters, technical workshops, and open-source fellowships.
+- [Our Team](https://moxforge.vercel.app/team): Executive leadership and core engineering roster.
+- [Careers at Moxforge](https://moxforge.vercel.app/careers): Software engineering internships and AI research fellowships.
+- [Contact Moxforge](https://moxforge.vercel.app/contact): Enterprise partnerships, academic MOUs, and business enquiries.
+- [Connect with Mukilan Muthuvalathan](https://www.linkedin.com/in/mukilanmuthuvalathan): Founder & CEO LinkedIn profile.

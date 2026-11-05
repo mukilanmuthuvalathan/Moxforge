@@ -1,0 +1,22 @@
+# Moxforge — Information, Technology & Internet
+
+> Moxforge is an Information, Technology, and Internet organization uniting applied software and artificial intelligence venture creation (Moxforge Innovation Labs) with an open global developer ecosystem (Moxforge Community). Founded by CEO Mukilan Muthuvalathan alongside Co-Founder and CTO Pragatheeswaran Kasinathan, Moxforge builds scalable AI platforms, developer runtimes, and distributed cloud storage infrastructure.
+
+## Core Pages & Documentation
+
+- [Moxforge Home](https://moxforge.vercel.app/): Official overview of Moxforge, our four core pillars (Innovation, Entrepreneurship, Technology, Ecosystem), and executive vision.
+- [About Moxforge](https://moxforge.vercel.app/about): Organizational mission, vision, and founder architecture philosophy.
+- [Our Projects](https://moxforge.vercel.app/projects): Production AI and software platforms engineered by Moxforge Innovation Labs, including Learnito AI, Learnitosphere, Pylume, and Storvex.
+- [Our Ventures](https://moxforge.vercel.app/ventures): Dual-engine structure uniting Moxforge Innovation Labs and Moxforge Community.
+- [Innovation & Research](https://moxforge.vercel.app/innovation): Applied research tracks in large language models, autonomous robotics, multimodal perception, and edge computing hardware.
+- [Moxforge Community](https://moxforge.vercel.app/community): Collegiate developer chapters, technical symposiums, and open-source fellowships.
+- [Our Team](https://moxforge.vercel.app/team): Executive leadership and core engineering roster.
+- [Careers at Moxforge](https://moxforge.vercel.app/careers): Software engineering internships, AI research fellowships, and chapter leadership applications.
+- [Contact Moxforge](https://moxforge.vercel.app/contact): Enterprise R&D partnerships, academic MOUs, and business enquiries.
+
+## Official Profiles & Machine-Readable Resources
+
+- [XML Sitemap](https://moxforge.vercel.app/sitemap.xml): Complete search engine index of all Moxforge pages.
+- [AI Agent Catalog (ARD)](https://moxforge.vercel.app/.well-known/ai-catalog.json): Agentic Resource Discovery manifest for autonomous AI agents.
+- [Connect with Founder Mukilan Muthuvalathan on LinkedIn](https://www.linkedin.com/in/mukilanmuthuvalathan): Official LinkedIn profile of Moxforge Founder & CEO Mukilan Muthuvalathan.
+- [Moxforge GitHub Repository](https://github.com/mukilanmuthuvalathan/Moxforge): Official source code and technical documentation repository.
