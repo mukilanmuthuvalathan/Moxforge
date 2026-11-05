@@ -5,7 +5,7 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/((?!llms\\.txt|ai-catalog\\.json|\\.well-known/.*|robots\\.txt|sitemap\\.xml|site\\.webmanifest|google3c137e9371f21c82\\.html|assets/.*|images/.*).*)",
+      "source": "/((?!llms\\.txt|ard\\.json|ai-catalog\\.json|\\.well-known/.*|robots\\.txt|sitemap\\.xml|site\\.webmanifest|google3c137e9371f21c82\\.html|assets/.*|images/.*).*)",
       "destination": "/index.html"
     }
   ],
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "source": "/(ai-catalog\\.json|\\.well-known/ai-catalog\\.json)",
+      "source": "/(ard\\.json|\\.well-known/ard\\.json|ai-catalog\\.json|\\.well-known/ai-catalog\\.json)",
       "headers": [
         {
           "key": "Content-Type",

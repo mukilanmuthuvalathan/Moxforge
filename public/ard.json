@@ -1,0 +1,25 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Moxforge",
+    "identifier": "did:web:moxforge.vercel.app",
+    "documentationUrl": "https://moxforge.vercel.app/about",
+    "logoUrl": "https://moxforge.vercel.app/assets/aistudio/bluemetallic_logo_new_1__20729a63.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:moxforge:documentation:llms-txt",
+      "displayName": "Moxforge LLMs Documentation Index",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "description": "Structured Markdown overview of Moxforge, Moxforge Innovation Labs, flagship AI products (Learnito AI, Learnitosphere, Pylume, Storvex), and Moxforge Community.",
+      "url": "https://moxforge.vercel.app/llms.txt",
+      "representativeQueries": [
+        "what is Moxforge and what software products do they build",
+        "explore Moxforge Innovation Labs AI projects and developer chapters",
+        "contact Moxforge for enterprise AI and software engineering partnerships"
+      ],
+      "tags": ["moxforge", "ai", "software", "innovation-labs", "developer-community"],
+      "version": "1.0.0"
+    }
+  ]
+}

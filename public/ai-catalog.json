@@ -1,5 +1,4 @@
 {
-  "$schema": "https://raw.githubusercontent.com/ards-project/ard-spec/main/spec/schemas/ai-catalog.schema.json",
   "specVersion": "1.0",
   "host": {
     "displayName": "Moxforge",
@@ -9,9 +8,9 @@
   },
   "entries": [
     {
-      "identifier": "urn:ai:moxforge.vercel.app:documentation:llms-txt",
+      "identifier": "urn:air:moxforge:documentation:llms-txt",
       "displayName": "Moxforge LLMs Documentation Index",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "description": "Structured Markdown overview of Moxforge, Moxforge Innovation Labs, flagship AI products (Learnito AI, Learnitosphere, Pylume, Storvex), and Moxforge Community.",
       "url": "https://moxforge.vercel.app/llms.txt",
       "representativeQueries": [
