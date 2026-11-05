@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" fill="none">
+  <defs>
+    <linearGradient id="bg-innov" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090F1D" />
+      <stop offset="55%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+    <radialGradient id="glow-innov" cx="62%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.32" />
+      <stop offset="55%" stop-color="#2563EB" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="prism-face-1" x1="220" y1="90" x2="360" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.12" />
+    </linearGradient>
+    <linearGradient id="prism-face-2" x1="320" y1="90" x2="430" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#93C5FD" stop-opacity="0.28" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0.35" />
+    </linearGradient>
+    <linearGradient id="beam-in" x1="60" y1="230" x2="265" y2="195" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94A3B8" stop-opacity="0" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0.9" />
+    </linearGradient>
+    <linearGradient id="beam-out-1" x1="365" y1="175" x2="585" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="beam-out-2" x1="375" y1="195" x2="590" y2="195" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#60A5FA" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="beam-out-3" x1="365" y1="215" x2="575" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#818CF8" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="grid-innov" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#bg-innov)" />
+  <rect width="640" height="400" fill="url(#grid-innov)" opacity="0.65" />
+  <rect width="640" height="400" fill="url(#glow-innov)" />
+
+  <!-- Architectural Orbit Rings -->
+  <circle cx="320" cy="200" r="142" stroke="#334155" stroke-width="1" stroke-dasharray="4 6" />
+  <circle cx="320" cy="200" r="104" stroke="#1E3A8A" stroke-width="1.2" />
+
+  <!-- Incoming Problem Signal -->
+  <path d="M 60 232 L 266 196" stroke="url(#beam-in)" stroke-width="3.5" stroke-linecap="round" />
+  <circle cx="140" cy="218" r="3.5" fill="#E2E8F0" />
+  <circle cx="205" cy="206" r="4" fill="#38BDF8" />
+
+  <!-- Refracted Solution Beams -->
+  <path d="M 362 175 L 580 108 L 580 132 L 368 188 Z" fill="url(#beam-out-1)" />
+  <path d="M 370 190 L 590 182 L 590 208 L 370 204 Z" fill="url(#beam-out-2)" />
+  <path d="M 364 208 L 575 268 L 575 292 L 358 222 Z" fill="url(#beam-out-3)" />
+
+  <!-- Precision Isometric Glass Prism -->
+  <polygon points="320,86 218,278 320,308" fill="url(#prism-face-1)" stroke="#7DD3FC" stroke-width="1.5" />
+  <polygon points="320,86 422,278 320,308" fill="url(#prism-face-2)" stroke="#38BDF8" stroke-width="1.5" />
+  <polygon points="218,278 320,248 422,278 320,308" fill="#0F172A" fill-opacity="0.45" stroke="#60A5FA" stroke-width="1" stroke-dasharray="3 3" />
+  <line x1="320" y1="86" x2="320" y2="308" stroke="#E0F2FE" stroke-width="1.8" />
+
+  <!-- Solution Nodes -->
+  <circle cx="485" cy="143" r="5" fill="#38BDF8" stroke="#0F172A" stroke-width="2" />
+  <circle cx="515" cy="195" r="5" fill="#60A5FA" stroke="#0F172A" stroke-width="2" />
+  <circle cx="490" cy="252" r="5" fill="#818CF8" stroke="#0F172A" stroke-width="2" />
+
+  <!-- Technical Frame Marks -->
+  <path d="M 28 44 L 28 28 L 44 28" stroke="#475569" stroke-width="1.5" />
+  <path d="M 612 44 L 612 28 L 596 28" stroke="#475569" stroke-width="1.5" />
+  <path d="M 28 356 L 28 372 L 44 372" stroke="#475569" stroke-width="1.5" />
+  <path d="M 612 356 L 612 372 L 596 372" stroke="#475569" stroke-width="1.5" />
+</svg>

@@ -1,0 +1,8 @@
+{
+  "name": "MOXFORGE",
+  "description": "Official corporate and innovation portal for MOXFORGE: explore our mission, AI projects, Moxforge Labs, Moxforge Community chapters, research initiatives, partners, team, and careers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" fill="none">
+  <defs>
+    <linearGradient id="bg-tech" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#090F1D" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+    <radialGradient id="glow-tech" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#1D4ED8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="layer-top" x1="180" y1="110" x2="460" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.42" />
+      <stop offset="100%" stop-color="#1D4ED8" stop-opacity="0.25" />
+    </linearGradient>
+    <linearGradient id="layer-mid" x1="180" y1="160" x2="460" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#1E3A8A" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="layer-bot" x1="180" y1="210" x2="460" y2="310" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9" />
+    </linearGradient>
+    <pattern id="grid-tech" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#1E293B" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="640" height="400" fill="url(#bg-tech)" />
+  <rect width="640" height="400" fill="url(#grid-tech)" opacity="0.65" />
+  <rect width="640" height="400" fill="url(#glow-tech)" />
+
+  <!-- Circuit & Optical Bus Traces -->
+  <path d="M 70 200 L 175 200" stroke="#38BDF8" stroke-width="1.8" stroke-dasharray="6 4" />
+  <path d="M 465 200 L 570 200" stroke="#38BDF8" stroke-width="1.8" stroke-dasharray="6 4" />
+  <path d="M 110 130 L 180 165" stroke="#60A5FA" stroke-width="1.2" />
+  <path d="M 530 130 L 460 165" stroke="#60A5FA" stroke-width="1.2" />
+  <path d="M 110 270 L 180 235" stroke="#60A5FA" stroke-width="1.2" />
+  <path d="M 530 270 L 460 235" stroke="#60A5FA" stroke-width="1.2" />
+
+  <!-- Bottom Infrastructure Plane -->
+  <polygon points="320,192 476,252 320,312 164,252" fill="url(#layer-bot)" stroke="#3B82F6" stroke-width="1.4" />
+
+  <!-- Middle Compute Runtime Plane -->
+  <polygon points="320,144 476,204 320,264 164,204" fill="url(#layer-mid)" stroke="#60A5FA" stroke-width="1.5" />
+
+  <!-- Top Applied Product & AI Plane -->
+  <polygon points="320,96 476,156 320,216 164,156" fill="url(#layer-top)" stroke="#BAE6FD" stroke-width="1.8" />
+
+  <!-- Vertical Interconnect Pillars -->
+  <line x1="320" y1="96" x2="320" y2="312" stroke="#7DD3FC" stroke-width="1.2" stroke-dasharray="3 3" />
+  <line x1="230" y1="156" x2="230" y2="252" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3" />
+  <line x1="410" y1="156" x2="410" y2="252" stroke="#38BDF8" stroke-width="1" stroke-dasharray="3 3" />
+
+  <!-- Core Silicon Node -->
+  <polygon points="320,134 364,152 320,170 276,152" fill="#0F172A" stroke="#E0F2FE" stroke-width="1.8" />
+  <circle cx="320" cy="152" r="4.5" fill="#38BDF8" />
+
+  <!-- Technical Frame Marks -->
+  <path d="M 28 44 L 28 28 L 44 28" stroke="#475569" stroke-width="1.5" />
+  <path d="M 612 44 L 612 28 L 596 28" stroke="#475569" stroke-width="1.5" />
+  <path d="M 28 356 L 28 372 L 44 372" stroke="#475569" stroke-width="1.5" />
+  <path d="M 612 356 L 612 372 L 596 372" stroke="#475569" stroke-width="1.5" />
+</svg>
