@@ -77,6 +77,14 @@ export const HomeView: React.FC<{ onNavigate: (page: PageId) => void }> = ({
             >
               View Our Ventures
             </button>
+            <a
+              href="https://www.linkedin.com/in/mukilanmuthuvalathan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2.5 text-sm font-medium text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition-colors whitespace-nowrap shrink-0 cursor-pointer"
+            >
+              Connect with Mukilan
+            </a>
           </div>
         </div>
       </section>
