@@ -44,7 +44,7 @@ function resolveLocationPage(): PageId {
 }
 
 const PAGE_TITLES: Record<PageId, string> = {
-  home: 'Moxforge — Official Website | Information, Technology & Internet',
+  home: 'Moxforge — Information, Technology & Internet | AI & Software',
   about: 'About Us — Moxforge | Mission, Vision & Story',
   projects: 'Our Projects — Moxforge | AI & Software Platforms',
   ventures: 'Our Ventures — Moxforge | Innovation Labs & Community',
